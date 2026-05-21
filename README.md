@@ -62,6 +62,19 @@ pip install -r requirements.txt
 uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
+Developer setup (run once):
+
+```bash
+./scripts/setup_dev.sh
+```
+
+Run tests:
+
+```bash
+source .venv/bin/activate
+pytest -q
+```
+
 Example request:
 
 ```bash
