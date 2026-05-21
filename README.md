@@ -46,6 +46,30 @@ The experience should feel:
 
 
 ---
+## Quickstart (local)
+
+A minimal FastAPI scaffold has been added to this repository to demonstrate a runnable retrieval API.
+
+- App entry: `src/main.py`
+- Dependencies: `requirements.txt`
+
+Run locally:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Example request:
+
+```bash
+curl -X POST "http://127.0.0.1:8000/retrieve" -H "Content-Type: application/json" -d '{"q":"example query"}'
+```
+
+Next steps: wire in embeddings + vector store, add tests, and commit the scaffold.
+
 
 Color Palette System
 
