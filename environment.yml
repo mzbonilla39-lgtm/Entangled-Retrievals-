@@ -6,4 +6,3 @@ dependencies:
   - python=3.10
   - pytest
   - flake8
-environment.yml
